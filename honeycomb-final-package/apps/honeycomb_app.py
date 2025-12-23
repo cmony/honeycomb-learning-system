@@ -14,6 +14,11 @@ import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
 import json
+import sys
+import os
+
+# 부모 디렉토리 경로 추가 (모듈 임포트용)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # 메인 시스템 임포트
 from honeycomb_learning_system import (
